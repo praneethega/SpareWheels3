@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sparewheels3"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="SpareWheels3"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpareWheels3">
+        <activity
+            android:name=".activities.OrderDetailsSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OrderDetailsUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ShopDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileEditSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileEditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterSellerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
